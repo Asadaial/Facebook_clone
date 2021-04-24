@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+body{
+    background-color: aliceblue;
+    width: 100%;
+}
+.navv{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 6px #ccc;
+}
+.nev_left{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-size: 50px !important;
+    padding-right: 5px;
+}
+.nev_search{
+    display: flex;
+    align-items: center;
+    background-color: #f1f2f6;
+    padding: 15px;
+    border-radius: 50px;
+    height: 40px;
+}
+.nev_search input{
+ outline: none;
+ border: none;
+ background: transparent;
+ padding: 0 10px;
+}
+.nav_mid{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    padding: 10px 2.8vw ; 
+    border-radius: 5px;
+    
+}
+.icon:hover{
+    background-color:#f1f2f6 ;
+    transition: ease-in-out 0.2s;
+}
+.icon i{
+    font-size: 30px;
+}
+.nev_right{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+.avatar:hover{
+    background-color:#f1f2f6 ;
+    transition: ease-in-out 0.2s;
+}
+
+.avatar_image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.buttons i{
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 1px;
+    border-radius: 50%;
+    background: #f1f2f6;
+}
+.buttons i:hover{
+    background-color:#d8d9dd ;
+    transition: ease-in-out 0.2s;
+}
+@media screen and (max-width: 985px){
+    .nev_search input{
+        display: none;
+    }
+}
+@media screen and (max-width: 735px){
+    .nav_mid{
+        display: none;
+    }
+}
+@media screen and (max-width: 465px){
+    .avatar{
+        display: none;
+    }
+}
+
+
+
+
+.feed{
+    display: flex;
+    justify-content: space-between;
+}
+.leftslide{
+    width: 25%;
+    padding-top: 10px;
+    margin: 5px;
+    
+}
+.leftitem{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding-left: 5px;
+    width: 100%;
+    height: 35px;
+}
+.leftitem:hover{
+    background-color:#c8cfec ;
+    transition: ease-in-out 0.2s;
+}
+.leftitem i{
+    font-size: 20px;
+    color: green;
+    padding-right: 10px;
+
+}
+
+
+.midslide{
+    width: 48%;
+    padding-top: 10px;
+    margin: 5px;
+
+}
+
+.status{
+    padding-top: 5px;
+    width: 100%;
+    height: 200px;
+    border: black;
+    display: flex;
+    align-items: center;
+}
+.status1{
+    border-radius: 10px;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+.st1_image{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container {
+    padding: 2px 16px;
+    
+}
+h5{
+    color: green;
+}
+.status1:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.otherstatus{
+    width: 20%;
+    border-radius: 30px;
+    height: 100%;
+    margin: 5px;
+   
+
+    
+}
+.otherstatus:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.status_img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    
+}
+
+
+
+.lastslide{
+    padding-top: 10px;
+    width: 25%;
+    margin: 5px;
+}
+h3{
+    padding-left: 10px;
+    color: rgb(154, 160, 160);
+}
+
+.rightitem{
+    
+    
+    padding: 10px;
+    display: flex;
+    border-radius: 3px;
+}
+
+.rightitem img{
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    padding-right: 5px;
+   
+}
+.rightitem:hover{
+    background-color:#d8d9dd ;
+    transition: ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1120px) {
+    .st_5{
+        display: none;
+    }
+}
+@media screen and (max-width: 1120px )  {
+    .leftslide{
+        display: none;
+    }
+    .lastslide{
+        width: 30%;
+    }
+    .midslide{
+        width: 70%;
+    }
+
+}
+@media screen and (max-width: 870px ){
+    .lastslide{
+        display: none;
+    }
+    .midslide{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 690px ){
+    .st_5{
+        display: none;
+    }
+    .midslide{
+        width: 100%;
+    }
+}
